@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9a9606e9b288994a8848fec6d3efe09, type: 3}
   m_Name: Notebook2
   m_EditorClassIdentifier: 
+  id: notebook2
   prefab: {fileID: 6309665673140791727, guid: bb90fec3cb345a94a95f8df0959c6526, type: 3}
   stage: 1
   objectType: 0

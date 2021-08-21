@@ -10,9 +10,9 @@ public class Object : ScriptableObject
 }
 public enum Stage
 {
-    stage1,
-    stage2,
-    stage3
+    One,
+    Two,
+    Three
 }
 
 public enum ObjectType

@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 6878448846896255607}
   - component: {fileID: 5288335096140312916}
-  - component: {fileID: 400241290447987258}
-  - component: {fileID: -545674728367249936}
+  - component: {fileID: 608011002002301750}
+  - component: {fileID: 7957658446676597220}
   m_Layer: 0
-  m_Name: Notebook 3
+  m_Name: Skeleton 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -84,7 +84,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &400241290447987258
+--- !u!60 &608011002002301750
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -149,7 +149,7 @@ PolygonCollider2D:
       - {x: 0.09375, y: -0.49609375}
       - {x: 0.14453125, y: -0.484375}
       - {x: 0.19921875, y: -0.46875}
---- !u!114 &-545674728367249936
+--- !u!114 &7957658446676597220
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

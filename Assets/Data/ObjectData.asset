@@ -17,9 +17,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 6f97713f22811964b9beac6d6ef083ee, type: 2}
   - {fileID: 11400000, guid: e4b9367d75c0c1e4883c3640c26542b8, type: 2}
   skeletons:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 1f223b4bbff110944a3dd21ded5b7fc1, type: 2}
+  - {fileID: 11400000, guid: 8328cf68d5f289f4dba2571160cc0446, type: 2}
+  - {fileID: 11400000, guid: b0497409495cd9144810d43eea7df681, type: 2}
   beds:
   - {fileID: 0}
   - {fileID: 0}

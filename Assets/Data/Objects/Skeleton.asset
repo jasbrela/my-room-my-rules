@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9a9606e9b288994a8848fec6d3efe09, type: 3}
   m_Name: Skeleton
   m_EditorClassIdentifier: 
-  prefab: {fileID: 5884857941824122293, guid: a486a1e0ddaa7a140b4ddbc5a50efe12, type: 3}
+  id: skeleton1
+  prefab: {fileID: 2631267503512851539, guid: b34705a2347beb948ad78c4cd6a62031, type: 3}
   stage: 0
   objectType: 1

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1285348422631279785}
   - component: {fileID: 1285348422631279784}
   m_Layer: 0
-  m_Name: NotebookPosition
+  m_Name: DeskPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,5 +44,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectData: {fileID: 11400000, guid: 79b53704e0f487248874ac0e4cfd0bde, type: 2}
-  firstObject: {fileID: 11400000, guid: 140fb6032bf762146a15e427b56e8cd6, type: 2}
-  objectType: 0
+  firstObject: {fileID: 0}
+  objectType: 3

@@ -4,12 +4,15 @@ using UnityEngine;
 public class ObjectSpot : MonoBehaviour
 {
     [SerializeField] private ObjectData objectData;
-    [SerializeField] private Object @object;
+    [SerializeField] private Object firstObject;
     [SerializeField] private ObjectType objectType;
 
     private void Awake()
     {
-        Instantiate(@object.prefab, transform);
+        if (firstObject != null)
+        {
+            Instantiate(firstObject.prefab, transform);
+        }
     }
 
     private void Update()
@@ -17,7 +20,7 @@ public class ObjectSpot : MonoBehaviour
         // maybe add observer? so this wont be checking all the time??
         // also this need some optimization but its the best i can think of rn
         
-        if (@object.objectType == this.objectType)
+        if (firstObject.objectType == this.objectType)
         {
             switch (objectType)
             {
@@ -59,12 +62,12 @@ public class ObjectSpot : MonoBehaviour
 
     private void UpdateItem(Object @object)
     {
-        if (this.@object.id != @object.id)
+        if (this.firstObject.id != @object.id)
         {
             Destroy(this.gameObject.transform.GetChild(0).gameObject);
             Instantiate(@object.prefab, transform);
 
-            this.@object = @object;
+            this.firstObject = @object;
         }
     }
 }

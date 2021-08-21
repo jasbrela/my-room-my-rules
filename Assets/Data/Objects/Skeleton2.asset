@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f9a9606e9b288994a8848fec6d3efe09, type: 3}
-  m_Name: Notebook
+  m_Name: Skeleton2
   m_EditorClassIdentifier: 
-  id: notebook1
-  prefab: {fileID: 2631267503512851539, guid: b47dc83d4fe1a6b46b3383506b2bc909, type: 3}
-  stage: 0
-  objectType: 0
+  id: skeleton2
+  prefab: {fileID: 6309665673140791727, guid: 6a9f7cfd64b998442aa9b9fca3b3cc7a, type: 3}
+  stage: 1
+  objectType: 1
