@@ -32,5 +32,6 @@ public class PlayerController : MonoBehaviour
             ref _velocity, (100 - speed) * 0.01f, maxSpeed, Time.deltaTime);
         
         // maybe add a "check if player clicked two times" to increase max speed and set running anim
+        // update 21/8 15:44 - we won't have player movement anymore. leaving this here until we replace it.
     }
 }
