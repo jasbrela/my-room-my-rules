@@ -45,4 +45,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectData: {fileID: 11400000, guid: 79b53704e0f487248874ac0e4cfd0bde, type: 2}
   firstObject: {fileID: 11400000, guid: 1f223b4bbff110944a3dd21ded5b7fc1, type: 2}
-  objectType: 3
+  objectType: 1
