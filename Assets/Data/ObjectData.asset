@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b55dcf2dcedfc5c49a097db2a47df6e4, type: 3}
+  m_Name: ObjectData
+  m_EditorClassIdentifier: 
+  notebooks:
+  - {fileID: 11400000, guid: 140fb6032bf762146a15e427b56e8cd6, type: 2}
+  - {fileID: 11400000, guid: 6f97713f22811964b9beac6d6ef083ee, type: 2}
+  - {fileID: 11400000, guid: e4b9367d75c0c1e4883c3640c26542b8, type: 2}
+  skeletons:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  beds:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  desks:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  chairs:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  stethoscopes:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  actionFigures:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  books:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  coatRacks:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
