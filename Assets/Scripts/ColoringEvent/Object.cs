@@ -3,6 +3,7 @@ using UnityEngine;
 [CreateAssetMenu]
 public class Object : ScriptableObject
 {
+    public string id;
     public GameObject prefab;
     public Stage stage;
     public ObjectType objectType;

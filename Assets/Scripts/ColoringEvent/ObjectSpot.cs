@@ -59,9 +59,12 @@ public class ObjectSpot : MonoBehaviour
 
     private void UpdateItem(Object @object)
     {
-        Destroy(this.gameObject.transform.GetChild(0).gameObject);
-        Instantiate(@object.prefab, transform);
+        if (this.@object.id != @object.id)
+        {
+            Destroy(this.gameObject.transform.GetChild(0).gameObject);
+            Instantiate(@object.prefab, transform);
 
-        this.@object = @object;
+            this.@object = @object;
+        }
     }
 }
