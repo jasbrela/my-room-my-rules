@@ -1431,7 +1431,7 @@ MonoBehaviour:
   menuButton: {fileID: 1602243410103384677}
   originalCanva: {fileID: 0}
   musicToggle: {fileID: 5368482716740140479}
-  sfxToggle: {fileID: 0}
+  sfxToggle: {fileID: 5368482715634586438}
   audioMixer: {fileID: 24100000, guid: 9f0a4a096155a15489e4ee145c0f96a0, type: 2}
   isInGameConfig: 0
 --- !u!1 &5368482716740140473
