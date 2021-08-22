@@ -1,12 +1,13 @@
 using System;
-using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine;
 
 public enum Event
 {
     BookAnim,
     NotebookAnim,
-    SkeletonAnim
+    SkeletonAnim,
+    ActionFigureAnim
 }
 
 public class EventHandler : MonoBehaviour

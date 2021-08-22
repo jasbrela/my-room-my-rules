@@ -22,7 +22,7 @@ public class ObjectSpot : MonoBehaviour
         // maybe add observer? so this wont be checking all the time??
         // also this need some optimization but its the best i can think of rn
         
-        if (firstObject.objectType == this.objectType)
+        if (firstObject.objectType == objectType)
         {
             switch (objectType)
             {
@@ -60,19 +60,19 @@ public class ObjectSpot : MonoBehaviour
         }
         else
         {
-            throw new Exception("Wrong Object Type added to this Object Spot: " + this.gameObject.name + ". " +
+            throw new Exception("Wrong Object Type added to this Object Spot: " + gameObject.name + ". " +
                                 "You may want to check the Object Data or Object Position.");
         }
     }
 
     private void UpdateItem(Object @object)
     {
-        if (this.firstObject.id != @object.id)
+        if (firstObject.id != @object.id)
         {
-            Destroy(this.gameObject.transform.GetChild(0).gameObject);
+            Destroy(gameObject.transform.GetChild(0).gameObject);
             Instantiate(@object.prefab, transform);
 
-            this.firstObject = @object;
+            firstObject = @object;
         }
     }
 }

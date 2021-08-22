@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class ChoiceManager : MonoBehaviour
 {
@@ -15,7 +12,7 @@ public class ChoiceManager : MonoBehaviour
 
     public void CheckChoice()
     {
-        nameChoice = this.gameObject.name;
+        nameChoice = gameObject.name;
         pc.nameC = nameChoice;
     }
 }

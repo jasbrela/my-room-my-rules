@@ -1,15 +1,13 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.EventSystems;
 
 public class ParentsController : MonoBehaviour
 {
-    public bool finishedGameplay = false;
+    public bool finishedGameplay;
 
     [Header("Variável que chama o evento pais")] 
-    public bool callher = false; // se ela terminou de jogar
+    public bool callher; // se ela terminou de jogar
     
     AudioSource audio_;
 
@@ -21,7 +19,7 @@ public class ParentsController : MonoBehaviour
 
     GameObject choicem, obj_qte, emoji1, emoji2;
 
-    int loop = 0;
+    int loop;
     public string nameC = "";
     GameObject livro;
 
@@ -43,7 +41,7 @@ public class ParentsController : MonoBehaviour
 
     void Update()
     {
-        if (callher == true && loop < 4) 
+        if (callher && loop < 4) 
         {
             
             loop += 1;
@@ -52,7 +50,7 @@ public class ParentsController : MonoBehaviour
             callher = false; // por hora resolve o bug no audio da porta
         }
 
-        if (finishedGameplay == true)
+        if (finishedGameplay)
         {
             // fecha animação dela jogando 
             
@@ -66,7 +64,7 @@ public class ParentsController : MonoBehaviour
         }
     }
 
-    bool x = false, y = false;
+    bool x, y;
     void Dialogo()
     {
         if (x == false)
@@ -109,7 +107,7 @@ public class ParentsController : MonoBehaviour
         nameC = "";
     }
 
-    bool z = false;
+    bool z;
     IEnumerator Wait_()
     {
         y = true;

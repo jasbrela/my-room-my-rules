@@ -1,12 +1,11 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class QTEController : MonoBehaviour
 {
-    float fillAmount = 0; // status do sprite
-    float timePassed = 0, timePassed_ = 0; // tempo q passou
+    float fillAmount; // status do sprite
+    float timePassed, timePassed_; // tempo q passou
     float decreaseStatus = 0.03f; // quanto maior, mais rápido vai decrescer o status
 
     public string success = ""; // se conseguiu ou não
@@ -58,7 +57,7 @@ public class QTEController : MonoBehaviour
     void CheckKey()
     {
         if (Input.anyKeyDown){
-            if (Input.GetKeyDown(letra.ToString()) && success != "no") // ao aperatr o botão
+            if (Input.GetKeyDown(letra) && success != "no") // ao aperatr o botão
             {
                 fillAmount += .2f; // aumenta o progresso
             }
