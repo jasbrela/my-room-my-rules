@@ -6,7 +6,8 @@ public enum Event
 {
     BookAnim,
     NotebookAnim,
-    SkeletonAnim
+    SkeletonAnim,
+    ActionFigureAnim
 }
 
 public class EventHandler : MonoBehaviour

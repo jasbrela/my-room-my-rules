@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b812b63391c655845803da3038ef60c7, type: 3}
+  m_Name: PlayerPositionData
+  m_EditorClassIdentifier: 
+  bookPlayerPosition: {fileID: 2195780898003593450, guid: b70ed7644a833a14382ac775e12aa133, type: 3}
+  skeletonPlayerPosition: {fileID: 2025783408804286762, guid: a768577382291ab4498e78d1db5ced46, type: 3}
+  actionFigurePlayerPosition: {fileID: 2389508209847494049, guid: 37e67e813c70d224a98b5f1c75e9e06e, type: 3}
+  notebookPlayerPosition: {fileID: 1275905324583987008, guid: 1fa6ee4a2c7713849a2e305701b19a69, type: 3}

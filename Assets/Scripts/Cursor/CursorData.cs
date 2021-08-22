@@ -5,8 +5,14 @@ using UnityEngine;
 [CreateAssetMenu]
 public class CursorData : ScriptableObject
 {
+    [Space(10)]
+    [TextArea] public string Notes;
+    [Space(10)]
+    
+    
     public LayerMask interactableLayer;
-    public Texture2D pointer; // normal
-    public Texture2D target; // interactable
-    public Texture2D doorway;
+    public Texture2D[] pointerCursors; // cursor
+    public Texture2D[] targetCursors; // interactable
+    public Texture2D[] doorwayCursors;
+
 }
