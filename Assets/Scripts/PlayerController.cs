@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
     }
 
     #region Trigger Anim Methods
-    private void TriggerBookAnim()
+    public void TriggerBookAnim()
     {
         transform.position = _playerPositionData.bookPlayerPosition.position;
         startTimer = true;
@@ -74,7 +74,6 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
-
                 startTimer = false;
                 timer = 0f;
                 StopAnim(currentAnim);
