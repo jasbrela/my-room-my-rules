@@ -41,7 +41,7 @@ public class ParentsController : MonoBehaviour
 
     void Update()
     {
-        if (callher && loop < 4) 
+        if (callher == true && loop < 4) 
         {
             
             loop += 1;
@@ -52,8 +52,6 @@ public class ParentsController : MonoBehaviour
 
         if (finishedGameplay)
         {
-            // fecha animação dela jogando 
-            
             Dialogo();
         }
         else
@@ -92,6 +90,7 @@ public class ParentsController : MonoBehaviour
                     paisemoji.GetComponent<Image>().sprite = emojisR[Random.Range(0, emojisR.Length)];
                     choice1.SetActive(false);
                     choice2.SetActive(false);
+                    GameHandler.colorStage--;
                     StartCoroutine("Wait", 2f);
                     break;
             }
@@ -123,7 +122,7 @@ public class ParentsController : MonoBehaviour
         finishedGameplay = false;
         nameC = "";
     }
-
+    
     public void CallParents() // chama evento pais
     {
         callher = true;
