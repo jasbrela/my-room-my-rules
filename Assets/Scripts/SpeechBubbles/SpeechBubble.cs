@@ -10,7 +10,7 @@ public class SpeechBubble : MonoBehaviour
         // this timer is only for testing purposes
         if (_timer > 1)
         {
-            this.gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite =
+            gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite =
                 sEmojiData.badEmojis[Random.Range(0, sEmojiData.badEmojis.Length)];
             
             _timer = 0;

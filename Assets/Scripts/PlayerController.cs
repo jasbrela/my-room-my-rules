@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour
     #region Trigger Anim Methods
     private void TriggerBookAnim()
     {
-        this.transform.position = this._playerPositionData.bookPlayerPosition.position;
+        transform.position = _playerPositionData.bookPlayerPosition.position;
         startTimer = true;
         anim.SetBool(Book, true);
         currentAnim = Book;
@@ -35,7 +35,7 @@ public class PlayerController : MonoBehaviour
     
     private void TriggerSkeletonAnim()
     {
-        this.transform.position = this._playerPositionData.skeletonPlayerPosition.position;
+        transform.position = _playerPositionData.skeletonPlayerPosition.position;
         startTimer = true;
         anim.SetBool(Skeleton, true);
         currentAnim = Skeleton;
@@ -43,7 +43,7 @@ public class PlayerController : MonoBehaviour
     
     private void TriggerNotebookAnim()
     {
-        this.transform.position = this._playerPositionData.notebookPlayerPosition.position;
+        transform.position = _playerPositionData.notebookPlayerPosition.position;
         startTimer = true;
         anim.SetBool(Notebook, true);
         currentAnim = Notebook;
@@ -51,7 +51,7 @@ public class PlayerController : MonoBehaviour
     
     private void TriggerActionFigureAnim()
     {
-        this.transform.position = this._playerPositionData.actionFigurePlayerPosition.position;
+        transform.position = _playerPositionData.actionFigurePlayerPosition.position;
         startTimer = true;
         anim.SetBool(ActionFigure, true);
         currentAnim = ActionFigure;

@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-
 public class MenuScript : MonoBehaviour
 {
     [SerializeField]
@@ -66,7 +65,7 @@ public class MenuScript : MonoBehaviour
 
     public void ConfigButtonClick()
     {
-        this.gameObject.SetActive(false);
+        gameObject.SetActive(false);
         configCanva.SetActive(true);
     }
 

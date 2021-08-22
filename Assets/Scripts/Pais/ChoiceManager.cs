@@ -12,7 +12,7 @@ public class ChoiceManager : MonoBehaviour
 
     public void CheckChoice()
     {
-        nameChoice = this.gameObject.name;
+        nameChoice = gameObject.name;
         pc.nameC = nameChoice;
     }
 }

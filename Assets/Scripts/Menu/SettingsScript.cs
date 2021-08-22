@@ -1,6 +1,6 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class SettingsScript : MonoBehaviour
@@ -51,7 +51,7 @@ public class SettingsScript : MonoBehaviour
     
     public void backButtonClick()
     {
-        this.gameObject.SetActive(false);
+        gameObject.SetActive(false);
         originalCanva.SetActive(true);
     }
 
