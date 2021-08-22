@@ -43,6 +43,19 @@ public class SettingsScript : MonoBehaviour
         {
             menuButton.SetActive(false);
         }
+
+        float value;
+        bool result = audioMixer.GetFloat("Music", out value);
+
+        if(result && value == -88)
+        {
+            musicToggle.isOn = false;
+        }
+        else
+        {
+            musicToggle.isOn = true;
+        }
+
     }
 
     // Update is called once per frame
