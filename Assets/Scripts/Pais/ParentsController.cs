@@ -8,8 +8,11 @@ public class ParentsController : MonoBehaviour
 {
     public bool finishedGameplay = false, callher = false; // se ela terminou de jogar
     AudioSource audio_;
-    GameObject paisTexto; // reacao pais
-    GameObject choicem, obj_qte;
+    GameObject paisgo, paisemoji; // reacao pais
+    public Sprite[] emojis, emojisR;
+    public Sprite[] emojisCerto;
+    public Sprite[] emojisErrado;
+    GameObject choicem, obj_qte, emoji1, emoji2;
     int loop = 0;
     public string nameC = "";
     GameObject livro;
@@ -17,8 +20,11 @@ public class ParentsController : MonoBehaviour
     void Awake()
     {
         audio_ = GetComponent<AudioSource>();
-        paisTexto = GameObject.FindWithTag("DPais");
-        paisTexto.SetActive(false);
+        paisgo = GameObject.FindWithTag("DPais");
+        paisemoji = GameObject.Find("Reacaopais");
+        emoji1 = GameObject.Find("Emoji1");
+        emoji2 = GameObject.Find("Emoji2");
+        paisgo.SetActive(false);
         choicem = GameObject.Find("Escolha1");
         obj_qte = GameObject.Find("QTE");
         livro = GameObject.Find("Livro");
@@ -40,43 +46,67 @@ public class ParentsController : MonoBehaviour
 
             Dialogo();
         }
+        else
+        {
+            x = false;
+            y = false;
+            z = false;
+        }
     }
 
+    bool x = false, y = false;
     void Dialogo()
     {
-        paisTexto.GetComponent<Text>().text = ":|";
-
-        switch (nameC)
+        if (x == false)
         {
-            case "":
-                paisTexto.SetActive(true);
-                break;
-            case "Escolha1":
-                paisTexto.GetComponent<Text>().text = ">:|";
-                StartCoroutine("Wait_", 2f);
-                break;
-            case "Escolha2":
-                paisTexto.GetComponent<Text>().text = ":)";
-                StartCoroutine("Wait", 2f);
-                break;
+            paisemoji.GetComponent<Image>().sprite = emojis[Random.Range(0, emojis.Length)];
+            emoji1.GetComponent<Image>().sprite = emojisErrado[Random.Range(0, emojisErrado.Length)];
+            emoji2.GetComponent<Image>().sprite = emojisCerto[Random.Range(0, emojisCerto.Length)];
+            x = true;
+        }
+
+        if (y == false)
+        {
+            switch (nameC)
+            {
+                case "":
+                    paisgo.SetActive(true);
+                    break;
+                case "Escolha1": // errado
+                    paisemoji.GetComponent<Image>().sprite = emojis[Random.Range(0, emojis.Length)];
+                    StartCoroutine("Wait_", 2f);
+                    break;
+                case "Escolha2": // certo
+                    paisemoji.GetComponent<Image>().sprite = emojisR[Random.Range(0, emojis.Length)];
+                    StartCoroutine("Wait", 2f);
+                    break;
+            }
         }
     }
 
     IEnumerator Wait()
     {
+        y = true;
         yield return new WaitForSeconds(2f);
-        paisTexto.SetActive(false);
+        paisgo.SetActive(false);
+        finishedGameplay = false;
+        nameC = "";
     }
-    bool x = false;
+
+    bool z = false;
     IEnumerator Wait_()
     {
+        y = true;
         yield return new WaitForSeconds(2f);
-        paisTexto.SetActive(false);
+        paisgo.SetActive(false);
         
-        if (x == false)
+        if (z == false)
         {
             livro.GetComponent<StudyController>().OpenQTE();
-            x = true;
+            z = true;
         }
+
+        finishedGameplay = false;
+        nameC = "";
     }
 }
