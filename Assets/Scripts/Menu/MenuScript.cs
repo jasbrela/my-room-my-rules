@@ -14,6 +14,12 @@ public class MenuScript : MonoBehaviour
     private GameObject configButton;
 
     [SerializeField]
+    private GameObject creditButton;
+
+    [SerializeField]
+    private GameObject backButton;
+
+    [SerializeField]
     private GameObject loadingText;
 
     [SerializeField]
@@ -25,6 +31,8 @@ public class MenuScript : MonoBehaviour
         playButton.SetActive(true);
         exitButton.SetActive(true);
         configButton.SetActive(true);
+        creditButton.SetActive(true);
+        backButton.SetActive(false);
 
         loadingText.SetActive(false);
 
@@ -60,5 +68,25 @@ public class MenuScript : MonoBehaviour
     {
         this.gameObject.SetActive(false);
         configCanva.SetActive(true);
+    }
+
+    public void CreditsButtonClick()
+    {
+        playButton.SetActive(false);
+        exitButton.SetActive(false);
+        configButton.SetActive(false);
+        creditButton.SetActive(false);
+
+        backButton.SetActive(true);
+    }
+
+    public void BackButtonClick()
+    {
+        playButton.SetActive(true);
+        exitButton.SetActive(true);
+        configButton.SetActive(true);
+        creditButton.SetActive(true);
+        
+        backButton.SetActive(false);
     }
 }
