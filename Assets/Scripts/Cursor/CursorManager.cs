@@ -4,7 +4,7 @@ public class CursorManager : MonoBehaviour
 {
     [SerializeField] private CursorData cursorData;
     private float timer;
-    private float secs = 5f;
+    private float secs = 5.5f;
     private bool startTimer;
     private void Update()
     {
