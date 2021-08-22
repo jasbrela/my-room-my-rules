@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1285348422631279787
+--- !u!1 &5395143857792847874
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,58 +8,42 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1285348422631279785}
-  - component: {fileID: 1285348422631279784}
-  - component: {fileID: 8541804327708568604}
+  - component: {fileID: 5395143857792847872}
+  - component: {fileID: 5395143857792847873}
   m_Layer: 0
-  m_Name: SkeletonPosition
+  m_Name: ButtonClick
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1285348422631279785
+--- !u!4 &5395143857792847872
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1285348422631279787}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.41, y: 2.33, z: 1}
+  m_GameObject: {fileID: 5395143857792847874}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.372965, y: -1.1996853, z: 141.32756}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1285348422631279784
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1285348422631279787}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b85d93b326e928e42bd0c3c724d6fb54, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectData: {fileID: 11400000, guid: 79b53704e0f487248874ac0e4cfd0bde, type: 2}
-  firstObject: {fileID: 11400000, guid: 1f223b4bbff110944a3dd21ded5b7fc1, type: 2}
-  objectType: 1
---- !u!82 &8541804327708568604
+--- !u!82 &5395143857792847873
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1285348422631279787}
+  m_GameObject: {fileID: 5395143857792847874}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 458747524518260166, guid: 9f0a4a096155a15489e4ee145c0f96a0, type: 2}
-  m_audioClip: {fileID: 8300000, guid: dee6f819d61e71046ad5ed1099487b8e, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 0.7
+  m_audioClip: {fileID: 8300000, guid: 46dca3f1fcf7c8c49a2cd06ec20c7018, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0

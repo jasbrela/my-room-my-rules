@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class CursorManager : MonoBehaviour
 {
@@ -6,6 +7,10 @@ public class CursorManager : MonoBehaviour
     private float timer;
     private float secs = 5.5f;
     private bool startTimer;
+
+    [SerializeField]
+    private AudioSource boneSound, turningPages, closingBook, mouseSound, keyboardSound;
+
     private void Update()
     {
         if (startTimer && timer < secs)
@@ -40,10 +45,14 @@ public class CursorManager : MonoBehaviour
                         case ObjectType.Book:
                             GameHandler.DecreaseColor();
                             EventHandler.Broadcast(Event.BookAnim);
+                            turningPages.Play();
+                            closingBook.PlayDelayed(3);
                             break;
                         case ObjectType.Notebook:
                             GameHandler.IncreaseColor();
                             EventHandler.Broadcast(Event.NotebookAnim);
+                            mouseSound.Play();
+                            keyboardSound.PlayDelayed(1);
                             break;
                         case ObjectType.ActionFigure:
                             GameHandler.IncreaseColor();
@@ -52,6 +61,7 @@ public class CursorManager : MonoBehaviour
                         case ObjectType.Skeleton:
                             GameHandler.DecreaseColor();
                             EventHandler.Broadcast(Event.SkeletonAnim);
+                            boneSound.Play();
                             break;
                     }
                 }
