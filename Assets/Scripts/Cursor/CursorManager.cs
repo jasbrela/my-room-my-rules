@@ -41,9 +41,11 @@ public class CursorManager : MonoBehaviour
                             EventHandler.Broadcast(Event.BookAnim);
                             break;
                         case ObjectType.Notebook:
+                            GameHandler.IncreaseColor();
                             EventHandler.Broadcast(Event.NotebookAnim);
                             break;
                         case ObjectType.ActionFigure:
+                            GameHandler.IncreaseColor();
                             EventHandler.Broadcast(Event.ActionFigureAnim);
                             break;
                         case ObjectType.Skeleton:

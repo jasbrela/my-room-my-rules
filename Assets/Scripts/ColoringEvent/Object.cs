@@ -26,5 +26,6 @@ public enum ObjectType
     ActionFigure,
     Book,
     CoatRack,
-    Poster
+    Poster,
+    Bedroom
 }

@@ -56,6 +56,9 @@ public class ObjectSpot : MonoBehaviour
                 case ObjectType.Poster:
                     UpdateItem(objectData.posters[GameHandler.colorStage]);
                     break;
+                case ObjectType.Bedroom:
+                    UpdateItem(objectData.bedrooms[GameHandler.colorStage]);
+                    break;
             }
         }
         else
