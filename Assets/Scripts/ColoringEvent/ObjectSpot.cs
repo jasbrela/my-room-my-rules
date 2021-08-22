@@ -51,12 +51,15 @@ public class ObjectSpot : MonoBehaviour
                 case ObjectType.CoatRack:
                     UpdateItem(objectData.coatRacks[IncreaseColor.colorStage]);
                     break;
+                case ObjectType.Poster:
+                    UpdateItem(objectData.posters[IncreaseColor.colorStage]);
+                    break;
             }
         }
         else
         {
             throw new Exception("Wrong Object Type added to this Object Spot: " + this.gameObject.name + ". " +
-                                "You may want to check the Object Data.");
+                                "You may want to check the Object Data or Object Position.");
         }
     }
 

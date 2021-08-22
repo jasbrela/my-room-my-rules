@@ -25,5 +25,6 @@ public enum ObjectType
     Stethoscope,
     ActionFigure,
     Book,
-    CoatRack
+    CoatRack,
+    Poster
 }
