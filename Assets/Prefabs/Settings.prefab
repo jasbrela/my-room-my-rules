@@ -1513,6 +1513,7 @@ MonoBehaviour:
   musicToggle: {fileID: 5368482716740140479}
   sfxToggle: {fileID: 5368482715634586438}
   audioMixer: {fileID: 24100000, guid: 9f0a4a096155a15489e4ee145c0f96a0, type: 2}
+  sliderMaster: {fileID: 5368482716252972254}
   isInGameConfig: 0
 --- !u!1 &5368482716740140473
 GameObject:
