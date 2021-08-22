@@ -3,8 +3,21 @@ using UnityEngine;
 public class CursorManager : MonoBehaviour
 {
     [SerializeField] private CursorData cursorData;
+    private float timer;
+    private float secs = 5f;
+    private bool startTimer;
     private void Update()
     {
+        if (startTimer && timer < secs)
+        {
+            timer += Time.deltaTime;
+        }
+        else
+        {
+            startTimer = false;
+            timer = 0f;
+        }
+
         RaycastHit2D
             hit2D = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition),
                 Vector2.zero, 0f, cursorData.interactableLayer.value);
@@ -19,8 +32,9 @@ public class CursorManager : MonoBehaviour
                 
             } else if (hit2D.collider.gameObject.CompareTag("Object"))
             {
-                if (Input.GetMouseButtonDown(0))
+                if (Input.GetMouseButtonDown(0) && !startTimer)
                 {
+                    startTimer = true;
                     switch (hit2D.transform.parent.GetComponent<ObjectSpot>().GetObjectType)
                     {
                         case ObjectType.Book:
