@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -13,13 +11,24 @@ public class MenuScript : MonoBehaviour
     private GameObject exitButton;
 
     [SerializeField]
+    private GameObject configButton;
+
+    [SerializeField]
     private GameObject loadingText;
+
+    [SerializeField]
+    private GameObject configCanva;
+
     // Start is called before the first frame update
     void Start()
     {
         playButton.SetActive(true);
         exitButton.SetActive(true);
+        configButton.SetActive(true);
+
         loadingText.SetActive(false);
+
+        configCanva.SetActive(false);
     }
 
     public void PlayButtonClick()
@@ -45,5 +54,11 @@ public class MenuScript : MonoBehaviour
     {
         loadingText.SetActive(true);
 
+    }
+
+    public void ConfigButtonClick()
+    {
+        this.gameObject.SetActive(false);
+        configCanva.SetActive(true);
     }
 }
