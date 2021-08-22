@@ -19,12 +19,15 @@ public class QTEController : MonoBehaviour
     GameObject obj_qte; // todo o qte
     GameObject obj_success; // acessa o texto, obj de feedback
     GameObject obj_letra; // acessa o texto, mostra letra que deve ser apertada
+
+    PlayerController pc;
     
     void Awake() // pega objs no início e atribui pra variáveis
     {
         obj_qte = GameObject.Find("QTE");
         obj_success = GameObject.FindWithTag("Success");
         obj_letra = GameObject.FindWithTag("Letra");
+        pc = GameObject.Find("Player").GetComponent<PlayerController>();
     }
 
     void Start()
@@ -95,6 +98,7 @@ public class QTEController : MonoBehaviour
         if (success == "") // se ainda nao teve resultado: first try
         {
             StartCoroutine("CheckEvent", 3); // checa se ganhou ou perdeu
+            pc.TriggerBookAnim();
         } 
         else if (success == "no")
         {

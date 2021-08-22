@@ -54,3 +54,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a144e66e335ccfa4d9adaca09b470c48, type: 2}
   - {fileID: 11400000, guid: 27babb4c2a415ce439c85d0069d2ab4c, type: 2}
   - {fileID: 11400000, guid: b74d9758a183cd441b9f0a268065090f, type: 2}
+  bedrooms:
+  - {fileID: 11400000, guid: 1ae4e25b5eebed74eb6b00e873b189ee, type: 2}
+  - {fileID: 11400000, guid: 3623c318102dc4242a0f3c33cd9ce83d, type: 2}
+  - {fileID: 11400000, guid: 2acf33a41e0afca49a17034dc01ad1cf, type: 2}

@@ -18,4 +18,5 @@ public class ObjectData : ScriptableObject
     public Object[] books;
     public Object[] coatRacks;
     public Object[] posters;
+    public Object[] bedrooms;
 }

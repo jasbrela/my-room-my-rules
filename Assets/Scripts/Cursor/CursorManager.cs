@@ -28,9 +28,9 @@ public class CursorManager : MonoBehaviour
         {
             if (hit2D.collider.gameObject.CompareTag("Doorway"))
             {
-                Cursor.SetCursor(cursorData.doorwayCursors[IncreaseColor.colorStage], new Vector2(16f, 16f), CursorMode.Auto);
+                Cursor.SetCursor(cursorData.doorwayCursors[GameHandler.ColorStage], new Vector2(16f, 16f), CursorMode.Auto);
                 
-            } else if (hit2D.collider.gameObject.CompareTag("Object"))
+            } else if (hit2D.collider.gameObject.CompareTag("GameObject") || hit2D.collider.gameObject.CompareTag("BiologyObject"))
             {
                 if (Input.GetMouseButtonDown(0) && !startTimer)
                 {
@@ -38,24 +38,28 @@ public class CursorManager : MonoBehaviour
                     switch (hit2D.transform.parent.GetComponent<ObjectSpot>().GetObjectType)
                     {
                         case ObjectType.Book:
+                            GameHandler.DecreaseColor();
                             EventHandler.Broadcast(Event.BookAnim);
                             break;
                         case ObjectType.Notebook:
+                            GameHandler.IncreaseColor();
                             EventHandler.Broadcast(Event.NotebookAnim);
                             break;
                         case ObjectType.ActionFigure:
+                            GameHandler.IncreaseColor();
                             EventHandler.Broadcast(Event.ActionFigureAnim);
                             break;
                         case ObjectType.Skeleton:
+                            GameHandler.DecreaseColor();
                             EventHandler.Broadcast(Event.SkeletonAnim);
                             break;
                     }
                 }
-                Cursor.SetCursor(cursorData.targetCursors[IncreaseColor.colorStage], new Vector2(8f, 8f), CursorMode.Auto);
+                Cursor.SetCursor(cursorData.targetCursors[GameHandler.ColorStage], new Vector2(8f, 8f), CursorMode.Auto);
             }
         } else
         {
-            Cursor.SetCursor(cursorData.pointerCursors[IncreaseColor.colorStage], new Vector2(8f, 8f), CursorMode.Auto);
+            Cursor.SetCursor(cursorData.pointerCursors[GameHandler.ColorStage], new Vector2(8f, 8f), CursorMode.Auto);
         }
     }
 }
