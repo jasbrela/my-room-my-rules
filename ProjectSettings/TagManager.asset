@@ -6,11 +6,13 @@ TagManager:
   tags:
   - Success
   - Letra
+  - Object
+  - Doorway
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Interactable
   - Water
   - UI
   - 

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Stethoscope
   m_EditorClassIdentifier: 
   id: sthetoscope1
-  prefab: {fileID: 2631267503512851539, guid: 2de33d0188f4efc489961bdb82079ee0, type: 3}
+  prefab: {fileID: 2631267503512851539, guid: 3e87982a0457d1a4aadc15d8059bab04, type: 3}
   stage: 0
   objectType: 5

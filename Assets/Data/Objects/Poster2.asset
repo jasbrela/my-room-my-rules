@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Poster2
   m_EditorClassIdentifier: 
   id: poster2
-  prefab: {fileID: 6309665673140791727, guid: b393ada61f757484ab925a6c1d243381, type: 3}
+  prefab: {fileID: 6309665673140791727, guid: b3f5b59b3f2d30d488e5fde319faca06, type: 3}
   stage: 1
   objectType: 9
