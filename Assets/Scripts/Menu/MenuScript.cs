@@ -60,7 +60,6 @@ public class MenuScript : MonoBehaviour
     private void loadingActive()
     {
         loadingText.SetActive(true);
-
     }
 
     public void ConfigButtonClick()
