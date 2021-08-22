@@ -14,6 +14,7 @@ public class ParentsController : MonoBehaviour
     AudioSource audio_;
 
     GameObject paisgo, paisemoji; // reacao pais
+    public GameObject choice1, choice2;
     public Sprite[] emojis, emojisR;
     public Sprite[] emojisCerto;
     public Sprite[] emojisErrado;
@@ -27,6 +28,8 @@ public class ParentsController : MonoBehaviour
     void Awake()
     {
         audio_ = GetComponent<AudioSource>();
+        choice1 = GameObject.Find("Escolha1");
+        choice2 = GameObject.Find("Escolha2");
         paisgo = GameObject.FindWithTag("DPais");
         paisemoji = GameObject.Find("Reacaopais");
         emoji1 = GameObject.Find("Emoji1");
@@ -35,12 +38,14 @@ public class ParentsController : MonoBehaviour
         choicem = GameObject.Find("Escolha1");
         obj_qte = GameObject.Find("QTE");
         livro = GameObject.Find("BookQTE");
+        
     }
 
     void Update()
     {
         if (callher == true && loop < 4) 
         {
+            
             loop += 1;
             audio_.Play(0); // som bate na porta
             finishedGameplay = true;
@@ -50,7 +55,7 @@ public class ParentsController : MonoBehaviour
         if (finishedGameplay == true)
         {
             // fecha animação dela jogando 
-
+            
             Dialogo();
         }
         else
@@ -81,10 +86,14 @@ public class ParentsController : MonoBehaviour
                     break;
                 case "Escolha1": // errado
                     paisemoji.GetComponent<Image>().sprite = emojis[Random.Range(0, emojis.Length)];
+                    choice1.SetActive(false);
+                    choice2.SetActive(false);
                     StartCoroutine("Wait_", 2f);
                     break;
                 case "Escolha2": // certo
                     paisemoji.GetComponent<Image>().sprite = emojisR[Random.Range(0, emojisR.Length)];
+                    choice1.SetActive(false);
+                    choice2.SetActive(false);
                     StartCoroutine("Wait", 2f);
                     break;
             }
@@ -117,8 +126,10 @@ public class ParentsController : MonoBehaviour
         nameC = "";
     }
 
-    public void CallParents()
+    public void CallParents() // chama evento pais
     {
         callher = true;
+        choice1.SetActive(true);
+        choice2.SetActive(true);
     }
 }
