@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EstudyController : MonoBehaviour
+public class StudyController : MonoBehaviour
 {
     GameObject obj_qte;
 

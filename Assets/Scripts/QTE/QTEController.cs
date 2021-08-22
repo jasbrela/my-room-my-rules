@@ -9,11 +9,11 @@ public class QTEController : MonoBehaviour
     float timePassed = 0, timePassed_ = 0; // tempo q passou
     float decreaseStatus = 0.03f; // quanto maior, mais rápido vai decrescer o status
 
-    string success = ""; // se conseguiu ou não
+    public string success = ""; // se conseguiu ou não
     string letra = ""; // o botão pra apertar
     string[] btns = {"a", "w", "s", "d", "e", "q"}; // botões que podem ser sorteados
 
-    int lvl = 1; // próximo qte
+    public int lvl = 1; // próximo qte
 
     GameObject obj_qte; // todo o qte
     GameObject obj_success; // acessa o texto, obj de feedback
@@ -31,6 +31,12 @@ public class QTEController : MonoBehaviour
         obj_qte.SetActive(false);
         obj_success.SetActive(false); // esconde obj de feedback
         letra = btns[Random.Range(0, btns.Length)]; // fas primeiro sorteio de botão a ser apertado
+
+        lvl = 1;
+        decreaseStatus = 0.03f;
+        timePassed_ = 0;
+        timePassed = 0;
+        fillAmount = 0;
     }
 
     void Update()
@@ -113,6 +119,13 @@ public class QTEController : MonoBehaviour
             obj_success.GetComponent<Text>().text = ":(";
 
             yield return new WaitForSeconds(1f);
+
+            success = "";
+            fillAmount = 0;
+            decreaseStatus = 0.03f;
+            timePassed_ = 0;
+            timePassed = 0;
+            letra = btns[Random.Range(0, btns.Length)]; // faz sorteio do botão
 
             obj_success.SetActive(false);
             obj_qte.SetActive(false);
