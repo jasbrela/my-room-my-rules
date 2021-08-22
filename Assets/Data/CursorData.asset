@@ -18,14 +18,14 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   pointerCursors:
-  - {fileID: 2800000, guid: cfddbbb55587c4f4ea2cec3b883c6373, type: 3}
-  - {fileID: 2800000, guid: 3f52ddf05cebae14d90c1839229b66ae, type: 3}
-  - {fileID: 2800000, guid: e833a51a1bf4fce428e1def70a913c6f, type: 3}
+  - {fileID: 2800000, guid: e5f7f26da9658524c8b0cc5f3fe63e40, type: 3}
+  - {fileID: 2800000, guid: 1b194e8ff87160a418d98f7f1b1e8fc5, type: 3}
+  - {fileID: 2800000, guid: 85ae8432495f6a5459c5006337165afc, type: 3}
   targetCursors:
-  - {fileID: 2800000, guid: b539bda8896004d48a5c1c139f70170e, type: 3}
-  - {fileID: 2800000, guid: 31bdb93fcf642034a90d919ea923abeb, type: 3}
-  - {fileID: 2800000, guid: 6081bfe88c8802346b56e61745e8df43, type: 3}
+  - {fileID: 2800000, guid: b93dfbe60799c244fa773ae257829b23, type: 3}
+  - {fileID: 2800000, guid: b362c3101924a0847ade07a6c649ec88, type: 3}
+  - {fileID: 2800000, guid: 36475b7a78b804c4bbe2a6c003c7e24b, type: 3}
   doorwayCursors:
-  - {fileID: 2800000, guid: 7c2e956ce5a844048975cb6a09a1c002, type: 3}
-  - {fileID: 2800000, guid: 08db8a7f4f5911548bbe4ac28afcda3f, type: 3}
-  - {fileID: 2800000, guid: aa850724edb39a447b1960273a50a038, type: 3}
+  - {fileID: 2800000, guid: be362731807d02443b7292f465d0854c, type: 3}
+  - {fileID: 2800000, guid: d75181c9233dfd84eaf87f5c4a923912, type: 3}
+  - {fileID: 2800000, guid: 8bd9ec1331dc640479af0dd37b36ecd5, type: 3}
