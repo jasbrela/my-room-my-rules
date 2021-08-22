@@ -28,7 +28,7 @@ public class CursorManager : MonoBehaviour
         {
             if (hit2D.collider.gameObject.CompareTag("Doorway"))
             {
-                Cursor.SetCursor(cursorData.doorwayCursors[GameHandler.colorStage], new Vector2(16f, 16f), CursorMode.Auto);
+                Cursor.SetCursor(cursorData.doorwayCursors[GameHandler.ColorStage], new Vector2(16f, 16f), CursorMode.Auto);
                 
             } else if (hit2D.collider.gameObject.CompareTag("GameObject") || hit2D.collider.gameObject.CompareTag("BiologyObject"))
             {
@@ -38,6 +38,7 @@ public class CursorManager : MonoBehaviour
                     switch (hit2D.transform.parent.GetComponent<ObjectSpot>().GetObjectType)
                     {
                         case ObjectType.Book:
+                            GameHandler.DecreaseColor();
                             EventHandler.Broadcast(Event.BookAnim);
                             break;
                         case ObjectType.Notebook:
@@ -49,15 +50,16 @@ public class CursorManager : MonoBehaviour
                             EventHandler.Broadcast(Event.ActionFigureAnim);
                             break;
                         case ObjectType.Skeleton:
+                            GameHandler.DecreaseColor();
                             EventHandler.Broadcast(Event.SkeletonAnim);
                             break;
                     }
                 }
-                Cursor.SetCursor(cursorData.targetCursors[GameHandler.colorStage], new Vector2(8f, 8f), CursorMode.Auto);
+                Cursor.SetCursor(cursorData.targetCursors[GameHandler.ColorStage], new Vector2(8f, 8f), CursorMode.Auto);
             }
         } else
         {
-            Cursor.SetCursor(cursorData.pointerCursors[GameHandler.colorStage], new Vector2(8f, 8f), CursorMode.Auto);
+            Cursor.SetCursor(cursorData.pointerCursors[GameHandler.ColorStage], new Vector2(8f, 8f), CursorMode.Auto);
         }
     }
 }

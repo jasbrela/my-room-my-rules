@@ -130,6 +130,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1487998892}
     m_Modifications:
+    - target: {fileID: 4709962623443073062, guid: a50554dbe84c92b4da44f392524dc7fe, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4709962623443073062, guid: a50554dbe84c92b4da44f392524dc7fe, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4709962623443073062, guid: a50554dbe84c92b4da44f392524dc7fe, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1487998888}
+    - target: {fileID: 4709962623443073062, guid: a50554dbe84c92b4da44f392524dc7fe, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4709962623443073062, guid: a50554dbe84c92b4da44f392524dc7fe, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: DecreaseColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4709962623443073062, guid: a50554dbe84c92b4da44f392524dc7fe, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: GameHandler, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4709962623443073062, guid: a50554dbe84c92b4da44f392524dc7fe, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4709962623443073066, guid: a50554dbe84c92b4da44f392524dc7fe, type: 3}
       propertyPath: m_SizeDelta.x
       value: 26.489
@@ -571,7 +599,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &333799579
 RectTransform:
   m_ObjectHideFlags: 0

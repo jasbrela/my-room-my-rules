@@ -27,37 +27,37 @@ public class ObjectSpot : MonoBehaviour
             switch (objectType)
             {
                 case ObjectType.Notebook:
-                    UpdateItem(objectData.notebooks[GameHandler.colorStage]);
+                    UpdateItem(objectData.notebooks[GameHandler.ColorStage]);
                     break;
                 case ObjectType.Skeleton:
-                    UpdateItem(objectData.skeletons[GameHandler.colorStage]);
+                    UpdateItem(objectData.skeletons[GameHandler.ColorStage]);
                     break;
                 case ObjectType.Bed:
-                    UpdateItem(objectData.beds[GameHandler.colorStage]);
+                    UpdateItem(objectData.beds[GameHandler.ColorStage]);
                     break;
                 case ObjectType.Desk:
-                    UpdateItem(objectData.desks[GameHandler.colorStage]);
+                    UpdateItem(objectData.desks[GameHandler.ColorStage]);
                     break;
                 case ObjectType.Chair:
-                    UpdateItem(objectData.chairs[GameHandler.colorStage]);
+                    UpdateItem(objectData.chairs[GameHandler.ColorStage]);
                     break;
                 case ObjectType.Stethoscope:
-                    UpdateItem(objectData.stethoscopes[GameHandler.colorStage]);
+                    UpdateItem(objectData.stethoscopes[GameHandler.ColorStage]);
                     break;
                 case ObjectType.ActionFigure:
-                    UpdateItem(objectData.actionFigures[GameHandler.colorStage]);
+                    UpdateItem(objectData.actionFigures[GameHandler.ColorStage]);
                     break;
                 case ObjectType.Book:
-                    UpdateItem(objectData.books[GameHandler.colorStage]);
+                    UpdateItem(objectData.books[GameHandler.ColorStage]);
                     break;
                 case ObjectType.CoatRack:
-                    UpdateItem(objectData.coatRacks[GameHandler.colorStage]);
+                    UpdateItem(objectData.coatRacks[GameHandler.ColorStage]);
                     break;
                 case ObjectType.Poster:
-                    UpdateItem(objectData.posters[GameHandler.colorStage]);
+                    UpdateItem(objectData.posters[GameHandler.ColorStage]);
                     break;
                 case ObjectType.Bedroom:
-                    UpdateItem(objectData.bedrooms[GameHandler.colorStage]);
+                    UpdateItem(objectData.bedrooms[GameHandler.ColorStage]);
                     break;
             }
         }

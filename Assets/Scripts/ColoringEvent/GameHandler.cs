@@ -4,7 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class GameHandler : MonoBehaviour
 {
-    public static int colorStage; // 0 for 1, 1 for 2, 2 for 3
+    public static int ColorStage { get; private set; }
+
 
     public void onClick()
     {
@@ -13,13 +14,21 @@ public class GameHandler : MonoBehaviour
 
     public static void IncreaseColor()
     {
-        if (colorStage < 2)
+        if (ColorStage < 2)
         {
-            colorStage++;
+            ColorStage++;
         }
         else
         {
             SceneManager.LoadScene(3); 
+        }
+    }
+
+    public static void DecreaseColor()
+    {
+        if (ColorStage > 0)
+        {
+            ColorStage--;
         }
     }
     
