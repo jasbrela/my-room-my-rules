@@ -9,7 +9,6 @@ public class CursorManager : MonoBehaviour
     // TODO: make it change with the coloring event
 
     [SerializeField] private CursorData cursorData;
-    [SerializeField] private Vector2 hotspot;
     private void Update()
     {
         RaycastHit2D
@@ -24,14 +23,14 @@ public class CursorManager : MonoBehaviour
             
             if (hit2D.collider.gameObject.CompareTag("Doorway"))
             {
-                Cursor.SetCursor(cursorData.doorway, hotspot, CursorMode.Auto);
+                Cursor.SetCursor(cursorData.doorway, new Vector2(16f, 16f), CursorMode.Auto);
             } else if (hit2D.collider.gameObject.CompareTag("Object"))
             {
-                Cursor.SetCursor(cursorData.target, hotspot, CursorMode.Auto);
+                Cursor.SetCursor(cursorData.target, new Vector2(8f, 8f), CursorMode.Auto);
             }
         } else
         {
-            Cursor.SetCursor(cursorData.pointer, hotspot, CursorMode.Auto);
+            Cursor.SetCursor(cursorData.pointer, new Vector2(8f, 8f), CursorMode.Auto);
         }
     }
 }
