@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 571200761059792350}
   - component: {fileID: 1034053829310867215}
-  - component: {fileID: 8964201015918380596}
   - component: {fileID: 6870737563093601261}
   m_Layer: 3
   m_Name: Notebook 2
@@ -84,18 +83,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8964201015918380596
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6309665673140791727}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 964838615268ce4438e96ec9ce138730, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!60 &6870737563093601261
 PolygonCollider2D:
   m_ObjectHideFlags: 0
