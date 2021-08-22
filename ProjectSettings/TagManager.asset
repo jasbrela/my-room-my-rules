@@ -9,6 +9,8 @@ TagManager:
   - DPais
   - Object
   - Doorway
+  - GameObject
+  - BiologyObject
   layers:
   - Default
   - TransparentFX
@@ -43,11 +45,11 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Default
-    uniqueID: 0
-    locked: 0
   - name: Background
     uniqueID: 4184107597
+    locked: 0
+  - name: Default
+    uniqueID: 0
     locked: 0
   - name: Object
     uniqueID: 1959163581

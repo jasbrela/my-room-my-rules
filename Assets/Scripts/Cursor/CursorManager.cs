@@ -28,9 +28,9 @@ public class CursorManager : MonoBehaviour
         {
             if (hit2D.collider.gameObject.CompareTag("Doorway"))
             {
-                Cursor.SetCursor(cursorData.doorwayCursors[IncreaseColor.colorStage], new Vector2(16f, 16f), CursorMode.Auto);
+                Cursor.SetCursor(cursorData.doorwayCursors[GameHandler.colorStage], new Vector2(16f, 16f), CursorMode.Auto);
                 
-            } else if (hit2D.collider.gameObject.CompareTag("Object"))
+            } else if (hit2D.collider.gameObject.CompareTag("GameObject") || hit2D.collider.gameObject.CompareTag("BiologyObject"))
             {
                 if (Input.GetMouseButtonDown(0) && !startTimer)
                 {
@@ -51,11 +51,11 @@ public class CursorManager : MonoBehaviour
                             break;
                     }
                 }
-                Cursor.SetCursor(cursorData.targetCursors[IncreaseColor.colorStage], new Vector2(8f, 8f), CursorMode.Auto);
+                Cursor.SetCursor(cursorData.targetCursors[GameHandler.colorStage], new Vector2(8f, 8f), CursorMode.Auto);
             }
         } else
         {
-            Cursor.SetCursor(cursorData.pointerCursors[IncreaseColor.colorStage], new Vector2(8f, 8f), CursorMode.Auto);
+            Cursor.SetCursor(cursorData.pointerCursors[GameHandler.colorStage], new Vector2(8f, 8f), CursorMode.Auto);
         }
     }
 }
