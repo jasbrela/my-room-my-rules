@@ -50,6 +50,8 @@ public class QTEController : MonoBehaviour
         else if (lvl > 3)
         {
             obj_qte.SetActive(false);
+            lvl = 1;
+            decreaseStatus = 0.03f;
         }
     }
 
@@ -118,6 +120,7 @@ public class QTEController : MonoBehaviour
         decreaseStatus = 0.03f;
         timePassed_ = 0;
         timePassed = 0;
+        lvl = 1;
         letra = btns[Random.Range(0, btns.Length)]; // faz sorteio do botão
 
         obj_success.SetActive(false);
@@ -147,6 +150,7 @@ public class QTEController : MonoBehaviour
             }
 
             yield return new WaitForSeconds(1f);
+            
             obj_success.SetActive(false); // esconde obj de feedback
             letra = btns[Random.Range(0, btns.Length)]; // faz sorteio do botão
 

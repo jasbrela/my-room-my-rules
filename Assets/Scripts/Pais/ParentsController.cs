@@ -6,7 +6,8 @@ using UnityEngine.EventSystems;
 
 public class ParentsController : MonoBehaviour
 {
-    public bool finishedGameplay = false, callher = false; // se ela terminou de jogar
+    public bool finishedGameplay = false;
+    [Header("Variável que chama o evento pais")]public bool callher = false; // se ela terminou de jogar
     AudioSource audio_;
     GameObject paisgo, paisemoji; // reacao pais
     public Sprite[] emojis, emojisR;
@@ -27,7 +28,7 @@ public class ParentsController : MonoBehaviour
         paisgo.SetActive(false);
         choicem = GameObject.Find("Escolha1");
         obj_qte = GameObject.Find("QTE");
-        livro = GameObject.Find("Livro");
+        livro = GameObject.Find("BookQTE");
     }
 
     void Update()
@@ -77,7 +78,7 @@ public class ParentsController : MonoBehaviour
                     StartCoroutine("Wait_", 2f);
                     break;
                 case "Escolha2": // certo
-                    paisemoji.GetComponent<Image>().sprite = emojisR[Random.Range(0, emojis.Length)];
+                    paisemoji.GetComponent<Image>().sprite = emojisR[Random.Range(0, emojisR.Length)];
                     StartCoroutine("Wait", 2f);
                     break;
             }
