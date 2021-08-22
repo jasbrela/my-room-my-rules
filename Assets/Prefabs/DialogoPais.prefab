@@ -86,6 +86,7 @@ GameObject:
   - component: {fileID: 6555281076188677408}
   - component: {fileID: 1586223180170406884}
   - component: {fileID: 1597881030559264692}
+  - component: {fileID: 2028905714161709906}
   m_Layer: 5
   m_Name: Reacaopais
   m_TagString: Untagged
@@ -150,6 +151,25 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!95 &2028905714161709906
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4272808520410384881}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1c2c2e6db6a259c46bf578f6d5303965, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4709962623443073067
 GameObject:
   m_ObjectHideFlags: 0
@@ -163,6 +183,7 @@ GameObject:
   - component: {fileID: 4709962623443073063}
   - component: {fileID: 4709962623443073061}
   - component: {fileID: 4709962623443073062}
+  - component: {fileID: 6267188261456975385}
   m_Layer: 5
   m_Name: Escolha2
   m_TagString: Untagged
@@ -296,6 +317,25 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!95 &6267188261456975385
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4709962623443073067}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8fa3c362d14974847a68b0439ac9bc2d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4709962623758356478
 GameObject:
   m_ObjectHideFlags: 0
@@ -309,6 +349,7 @@ GameObject:
   - component: {fileID: 4709962623758356469}
   - component: {fileID: 4709962623758356475}
   - component: {fileID: 4709962623758356472}
+  - component: {fileID: 7221440933197021366}
   m_Layer: 5
   m_Name: Escolha1
   m_TagString: Untagged
@@ -442,6 +483,25 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!95 &7221440933197021366
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4709962623758356478}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8fa3c362d14974847a68b0439ac9bc2d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4709962623869485570
 GameObject:
   m_ObjectHideFlags: 0
