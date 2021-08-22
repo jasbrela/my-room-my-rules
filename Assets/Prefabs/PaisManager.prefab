@@ -58,8 +58,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 520a61215569f7342a78a6b895d8edb9, type: 3}
   emojisErrado:
   - {fileID: 21300000, guid: 8413bc058bb13f24a8342771e450cab5, type: 3}
-  - {fileID: 21300000, guid: 8413bc058bb13f24a8342771e450cab5, type: 3}
-  - {fileID: 21300000, guid: 8413bc058bb13f24a8342771e450cab5, type: 3}
+  - {fileID: 21300000, guid: dc11a65a72b064d4a9375345f7124b32, type: 3}
+  - {fileID: 21300000, guid: 162426963195e49409e893489110fd77, type: 3}
   nameC: 
 --- !u!82 &7672761010002638328
 AudioSource:

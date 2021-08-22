@@ -7,13 +7,19 @@ using UnityEngine.EventSystems;
 public class ParentsController : MonoBehaviour
 {
     public bool finishedGameplay = false;
-    [Header("Variável que chama o evento pais")]public bool callher = false; // se ela terminou de jogar
+
+    [Header("Variável que chama o evento pais")] 
+    public bool callher = false; // se ela terminou de jogar
+    
     AudioSource audio_;
+
     GameObject paisgo, paisemoji; // reacao pais
     public Sprite[] emojis, emojisR;
     public Sprite[] emojisCerto;
     public Sprite[] emojisErrado;
+
     GameObject choicem, obj_qte, emoji1, emoji2;
+
     int loop = 0;
     public string nameC = "";
     GameObject livro;
@@ -109,5 +115,10 @@ public class ParentsController : MonoBehaviour
 
         finishedGameplay = false;
         nameC = "";
+    }
+
+    public void CallParents()
+    {
+        callher = true;
     }
 }
