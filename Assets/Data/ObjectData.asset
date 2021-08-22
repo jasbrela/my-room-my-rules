@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b55dcf2dcedfc5c49a097db2a47df6e4, type: 3}
   m_Name: ObjectData
   m_EditorClassIdentifier: 
+  Notes: 'Please, respect the numerical order: 1, 2, 3. Otherwise, the coloring event
+    won''t work properly.'
   notebooks:
   - {fileID: 11400000, guid: 140fb6032bf762146a15e427b56e8cd6, type: 2}
   - {fileID: 11400000, guid: 6f97713f22811964b9beac6d6ef083ee, type: 2}
@@ -21,30 +23,34 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8328cf68d5f289f4dba2571160cc0446, type: 2}
   - {fileID: 11400000, guid: b0497409495cd9144810d43eea7df681, type: 2}
   beds:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: da5e2849e6e35af4aad13e51ca641906, type: 2}
+  - {fileID: 11400000, guid: e608b46eee202a1469ec21df022682c3, type: 2}
+  - {fileID: 11400000, guid: e13db5c3c25ac664d94f5174814723dc, type: 2}
   desks:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 75eff571e03b2fc4591e8f11dbe8c03d, type: 2}
+  - {fileID: 11400000, guid: b4bfa28a86b7d6943b04aa3bc880c793, type: 2}
+  - {fileID: 11400000, guid: bde3b36f6df658443969944fc331dfa0, type: 2}
   chairs:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 8c5808153ead75e4a9dcdd1c69f1d458, type: 2}
+  - {fileID: 11400000, guid: 03da3419d53b36241a7b202d1fd49d39, type: 2}
+  - {fileID: 11400000, guid: 44e18a1351bb8e048a032b4ca064493b, type: 2}
   stethoscopes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 89c3acacfaf4db24f9e15c4a4e1fd94d, type: 2}
+  - {fileID: 11400000, guid: 5ad30adb37794b944b2391bebfe82828, type: 2}
+  - {fileID: 11400000, guid: f245b2b441d757a409f6971cec242600, type: 2}
   actionFigures:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: b252f436c486eae4d8420cd064f9342a, type: 2}
+  - {fileID: 11400000, guid: dc2b080c3c3e9ac4196d820daff4ea69, type: 2}
+  - {fileID: 11400000, guid: 2d5c3e17391e40b499ab9058e1ddb10a, type: 2}
   books:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: b10b6132fdaa17c4783fa052bd84ab63, type: 2}
+  - {fileID: 11400000, guid: 797fa42f05fb2894f87951f239765871, type: 2}
+  - {fileID: 11400000, guid: 43aa15a021af67741ab790438f45038a, type: 2}
   coatRacks:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 82b43c0d060b5a64da81a70f4df1a992, type: 2}
+  - {fileID: 11400000, guid: c40af86e74d952b4bb51e27173cd3507, type: 2}
+  - {fileID: 11400000, guid: 6da41a40ad2a2a645b1d4d7516a1ee4e, type: 2}
+  posters:
+  - {fileID: 11400000, guid: a144e66e335ccfa4d9adaca09b470c48, type: 2}
+  - {fileID: 11400000, guid: 27babb4c2a415ce439c85d0069d2ab4c, type: 2}
+  - {fileID: 11400000, guid: b74d9758a183cd441b9f0a268065090f, type: 2}
