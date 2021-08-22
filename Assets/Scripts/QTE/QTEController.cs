@@ -9,11 +9,13 @@ public class QTEController : MonoBehaviour
     float timePassed = 0, timePassed_ = 0; // tempo q passou
     float decreaseStatus = 0.03f; // quanto maior, mais rápido vai decrescer o status
 
-    string success = ""; // se conseguiu ou não
+    public string success = ""; // se conseguiu ou não
     string letra = ""; // o botão pra apertar
     string[] btns = {"a", "w", "s", "d", "e", "q"}; // botões que podem ser sorteados
 
-    int lvl = 1; // próximo qte
+    public int lvl = 1; // próximo qte
+
+    public Sprite[] emoji;
 
     GameObject obj_qte; // todo o qte
     GameObject obj_success; // acessa o texto, obj de feedback
@@ -31,6 +33,12 @@ public class QTEController : MonoBehaviour
         obj_qte.SetActive(false);
         obj_success.SetActive(false); // esconde obj de feedback
         letra = btns[Random.Range(0, btns.Length)]; // fas primeiro sorteio de botão a ser apertado
+
+        lvl = 1;
+        decreaseStatus = 0.03f;
+        timePassed_ = 0;
+        timePassed = 0;
+        fillAmount = 0;
     }
 
     void Update()
@@ -42,19 +50,27 @@ public class QTEController : MonoBehaviour
         else if (lvl > 3)
         {
             obj_qte.SetActive(false);
+            lvl = 1;
+            decreaseStatus = 0.03f;
         }
     }
 
-    void QTE()
+    void CheckKey()
     {
-        obj_letra.GetComponent<Text>().text = letra.ToUpper(); // atualiza letra pra apertar
-
-        if (Input.GetKeyDown(letra.ToString()) && success != "no") // ao aperatr o botão
-        {
-            fillAmount += .2f; // aumenta o progresso
+        if (Input.anyKeyDown){
+            if (Input.GetKeyDown(letra.ToString()) && success != "no") // ao aperatr o botão
+            {
+                fillAmount += .2f; // aumenta o progresso
+            }
+            else 
+            {
+                success = "no";
+            }
         }
+    }
 
-        GetComponent<Image>().fillAmount = fillAmount; // atualiza o status no sprite
+    void DecreaseStatus()
+    {
         timePassed += Time.deltaTime; // tempo que passou
         
         if (timePassed > .05f && success == "") // se passou o tempo
@@ -63,6 +79,17 @@ public class QTEController : MonoBehaviour
             fillAmount -= decreaseStatus; // decresce status
             if (success == "yes") { fillAmount = 1; } // se conseguiu, fica cheio
         }
+    }
+
+    void QTE()
+    {
+        obj_letra.GetComponent<Text>().text = letra.ToUpper(); // atualiza letra pra apertar
+
+        CheckKey();
+
+        GetComponent<Image>().fillAmount = fillAmount; // atualiza o status no sprite
+        
+        DecreaseStatus();
 
         if (fillAmount < 0) { fillAmount = 0; } // não deixa o fill amount fica > 0, bugar
 
@@ -70,6 +97,34 @@ public class QTEController : MonoBehaviour
         {
             StartCoroutine("CheckEvent", 3); // checa se ganhou ou perdeu
         } 
+        else if (success == "no")
+        {
+            print("PERDEU :(");
+
+            timePassed_ = 0;
+
+            obj_success.SetActive(true);
+
+            obj_success.GetComponent<Image>().sprite = emoji[0];
+
+            StartCoroutine("SuccessNO", 1);
+        }
+    }
+
+    IEnumerator SuccessNO()
+    {
+        yield return new WaitForSeconds(1f);
+
+        success = "";
+        fillAmount = 0;
+        decreaseStatus = 0.03f;
+        timePassed_ = 0;
+        timePassed = 0;
+        lvl = 1;
+        letra = btns[Random.Range(0, btns.Length)]; // faz sorteio do botão
+
+        obj_success.SetActive(false);
+        obj_qte.SetActive(false);
     }
 
     IEnumerator CheckEvent()
@@ -83,17 +138,19 @@ public class QTEController : MonoBehaviour
             timePassed_ = 0;
 
             obj_success.SetActive(true);
+
             if (lvl == 3)
             {
                 print("VENCEU!");
-                obj_success.GetComponent<Text>().text = "congrats!";
+                obj_success.GetComponent<Image>().sprite = emoji[2];
             }
             else 
             {
-                obj_success.GetComponent<Text>().text = ":D";
+                obj_success.GetComponent<Image>().sprite = emoji[1];
             }
 
             yield return new WaitForSeconds(1f);
+            
             obj_success.SetActive(false); // esconde obj de feedback
             letra = btns[Random.Range(0, btns.Length)]; // faz sorteio do botão
 
@@ -110,12 +167,10 @@ public class QTEController : MonoBehaviour
             timePassed_ = 0;
 
             obj_success.SetActive(true);
-            obj_success.GetComponent<Text>().text = ":(";
 
-            yield return new WaitForSeconds(1f);
+            obj_success.GetComponent<Image>().sprite = emoji[0];
 
-            obj_success.SetActive(false);
-            obj_qte.SetActive(false);
+            StartCoroutine("SuccessNo", 1);
         }
     }
 }

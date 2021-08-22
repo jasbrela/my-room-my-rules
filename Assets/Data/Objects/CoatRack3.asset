@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: CoatRack3
   m_EditorClassIdentifier: 
   id: coatrack3
-  prefab: {fileID: 5866094116096013484, guid: 112b62cee6c06964b99a14f964b510d7, type: 3}
+  prefab: {fileID: 5866094116096013484, guid: c43b9e8b4a61764498e7466c3688ccb9, type: 3}
   stage: 2
   objectType: 8
