@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8327289463033554696}
   - component: {fileID: 1506625733111896541}
-  - component: {fileID: 8267809444549200690}
   - component: {fileID: -136859048743731596}
   m_Layer: 3
   m_Name: Skeleton 1
@@ -84,18 +83,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8267809444549200690
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2631267503512851539}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 964838615268ce4438e96ec9ce138730, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!60 &-136859048743731596
 PolygonCollider2D:
   m_ObjectHideFlags: 0

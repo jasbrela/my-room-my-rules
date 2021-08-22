@@ -7,6 +7,8 @@ public class ObjectSpot : MonoBehaviour
     [SerializeField] private Object firstObject;
     [SerializeField] private ObjectType objectType;
 
+    public ObjectType GetObjectType => objectType;
+
     private void Awake()
     {
         if (firstObject != null)

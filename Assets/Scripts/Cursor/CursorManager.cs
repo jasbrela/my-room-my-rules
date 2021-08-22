@@ -26,6 +26,15 @@ public class CursorManager : MonoBehaviour
                 Cursor.SetCursor(cursorData.doorway, new Vector2(16f, 16f), CursorMode.Auto);
             } else if (hit2D.collider.gameObject.CompareTag("Object"))
             {
+                if (Input.GetMouseButtonDown(0))
+                {
+                    switch (hit2D.transform.parent.GetComponent<ObjectSpot>().GetObjectType)
+                    {
+                        case ObjectType.Book:
+                            EventHandler.Broadcast(Event.BookAnim);
+                            break;
+                    }
+                }
                 Cursor.SetCursor(cursorData.target, new Vector2(8f, 8f), CursorMode.Auto);
             }
         } else
