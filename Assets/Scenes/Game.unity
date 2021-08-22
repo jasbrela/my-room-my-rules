@@ -733,10 +733,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 645256309}
     m_Modifications:
-    - target: {fileID: 2784034050341287924, guid: b31885e84f1ad6049adbbb0f610e3d72, type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4464643045865925641, guid: b31885e84f1ad6049adbbb0f610e3d72, type: 3}
       propertyPath: m_Name
       value: BookPosition
@@ -783,10 +779,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4464643045865925643, guid: b31885e84f1ad6049adbbb0f610e3d72, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5241976103911574456, guid: b31885e84f1ad6049adbbb0f610e3d72, type: 3}
-      propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1993,10 +1985,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SkeletonPosition
       objectReference: {fileID: 0}
-    - target: {fileID: 8541804327708568604, guid: 779d340e898be414e86c4b4702d95f40, type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 779d340e898be414e86c4b4702d95f40, type: 3}
 --- !u!4 &1280699460 stripped
@@ -2463,18 +2451,6 @@ PrefabInstance:
     - target: {fileID: 1285348422631279787, guid: 21ef5365c415be94c84509c9b8473eaa, type: 3}
       propertyPath: m_Name
       value: NotebookPosition
-      objectReference: {fileID: 0}
-    - target: {fileID: 5082714345942685973, guid: 21ef5365c415be94c84509c9b8473eaa, type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7162483535251417413, guid: 21ef5365c415be94c84509c9b8473eaa, type: 3}
-      propertyPath: Priority
-      value: 35
-      objectReference: {fileID: 0}
-    - target: {fileID: 7162483535251417413, guid: 21ef5365c415be94c84509c9b8473eaa, type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21ef5365c415be94c84509c9b8473eaa, type: 3}
