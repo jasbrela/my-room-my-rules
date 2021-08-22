@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b812b63391c655845803da3038ef60c7, type: 3}
   m_Name: PlayerPositionData
   m_EditorClassIdentifier: 
-  bookPlayerPosition: {fileID: 2195780898003593450, guid: b70ed7644a833a14382ac775e12aa133, type: 3}
+  bookPlayerPosition: {fileID: 8192689806227810505, guid: 57b36a87eba88144098339202998aba0, type: 3}
   skeletonPlayerPosition: {fileID: 3923655558584777231, guid: bc7ddfd8d84232543ac8f1e93b05e631, type: 3}
   actionFigurePlayerPosition: {fileID: 8657228213561413642, guid: a137e0f53c508ac44834ddc4ea5b01c5, type: 3}
-  notebookPlayerPosition: {fileID: 1275905324583987008, guid: 1fa6ee4a2c7713849a2e305701b19a69, type: 3}
+  notebookPlayerPosition: {fileID: 1595171447235802937, guid: efa13e3d8529561449186403d9bb57f1, type: 3}
