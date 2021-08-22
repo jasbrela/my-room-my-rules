@@ -46,6 +46,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   finishedGameplay: 0
   callher: 0
+  choice1: {fileID: 0}
+  choice2: {fileID: 0}
   emojis:
   - {fileID: 21300000, guid: 1e7527c41c6f1de41a3c29adc106224e, type: 3}
   - {fileID: 21300000, guid: c5c96adbd480e2d4b94e4eec2973e274, type: 3}
@@ -70,7 +72,7 @@ AudioSource:
   m_GameObject: {fileID: 7672761010002638331}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 458747524518260166, guid: 9f0a4a096155a15489e4ee145c0f96a0, type: 2}
   m_audioClip: {fileID: 8300000, guid: 803f7a063c7fe554eaa32fc48f898313, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1

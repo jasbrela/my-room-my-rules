@@ -82,7 +82,7 @@ public class SettingsScript : MonoBehaviour
         }
         else
         {
-            audioMixer.SetFloat("SFX", -11);
+            audioMixer.SetFloat("SFX", 0);
         }
     }
 
