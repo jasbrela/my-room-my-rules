@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: PlayerPosition
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerPositionData
-  bookPlayerPosition: {fileID: 0}
-  skeletonPlayerPosition: {fileID: 0}
-  actionFigurePlayerPosition: {fileID: 0}
-  notebookPlayerPosition: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: f9a9606e9b288994a8848fec6d3efe09, type: 3}
+  m_Name: Bedroom2
+  m_EditorClassIdentifier: 
+  id: bedroom2
+  prefab: {fileID: 2631267503512851539, guid: 708534c064a93cf43b29126bc27c30b7, type: 3}
+  stage: 1
+  objectType: 10
