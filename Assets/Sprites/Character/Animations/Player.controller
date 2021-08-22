@@ -165,26 +165,17 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: -3495746354582732551}
-    m_Position: {x: -210, y: -90, z: 0}
+    m_Position: {x: 310, y: 190, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 8690862300218924323}
-    m_Position: {x: 50, y: -90, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: -6346058202212557641}
-    m_Position: {x: 310, y: 30, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: 6221216407948041136}
-    m_Position: {x: 50, y: 30, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: 4371403017703833972}
-    m_Position: {x: -210, y: 30, z: 0}
+    m_Position: {x: 270, y: 60, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
-  m_AnyStatePosition: {x: 70, y: -170, z: 0}
-  m_EntryPosition: {x: 70, y: -130, z: 0}
+  m_AnyStatePosition: {x: 50, y: 20, z: 0}
+  m_EntryPosition: {x: 50, y: 120, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: 8690862300218924323}
@@ -227,25 +218,7 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: Skeleton
-    m_Type: 4
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: ActionFigure
-    m_Type: 4
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: Notebook
-    m_Type: 4
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -397,9 +370,6 @@ AnimatorState:
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -6857362509980524241}
-  - {fileID: 4401047820893656413}
-  - {fileID: 8936565433070051643}
-  - {fileID: -2726226418861887263}
   m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
