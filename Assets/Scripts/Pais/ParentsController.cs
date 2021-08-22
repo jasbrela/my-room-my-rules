@@ -90,6 +90,7 @@ public class ParentsController : MonoBehaviour
                     paisemoji.GetComponent<Image>().sprite = emojisR[Random.Range(0, emojisR.Length)];
                     choice1.SetActive(false);
                     choice2.SetActive(false);
+                    IncreaseColor.colorStage--;
                     StartCoroutine("Wait", 2f);
                     break;
             }
