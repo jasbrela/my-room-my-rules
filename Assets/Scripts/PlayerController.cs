@@ -23,9 +23,6 @@ public class PlayerController : MonoBehaviour
         EventHandler.AddHandler(Event.ActionFigureAnim, TriggerActionFigureAnim);
         EventHandler.AddHandler(Event.NotebookAnim, TriggerNotebookAnim);
     }
-    // TODO: block clicks when animation is running
-    // if you spam the triggers, the player will teleport to the points.
-    // basically: if the animation is running, this should not happen. 
 
     #region Trigger Anim Methods
     private void TriggerBookAnim()
