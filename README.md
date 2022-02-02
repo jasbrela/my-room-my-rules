@@ -1,16 +1,16 @@
 # MY ROOM, MY RULES!
 
-## HISTÓRIA
-My Room My Rules conta a história de uma garota em que seus pais te indicam uma carreira da qual seguir, porém a protagonista ainda não tem certeza se é aquilo que ela vai querer. Com o tempo, nossa protagonista vai se identificando com aquilo de que realmente gosta.
+## HISTORY
+"My Room My Rules!" tells the story of a girl in which her parents show her a career to follow, but the protagonist is still not sure if this is what she want. Over time, our protagonist will identify with what she really likes.
 
 ## GAMEPLAY
-O game é do gênero Point And Click, o jogador irá interagir com os objetos do cenário para participar dessa descoberta junto com a protagonista.
+The player will interact by clicking the objects in the scenario to help our protagonist with her discovery.
 
-# EQUIPE: Main-Fest
-- **Clara Romeiro** - Programmer, Sound - @clararomeiro on github
-- **Gabriela Milet** - Programmer - @jasbrela on github
-- **Julia Rebeca** - Artist, Game Design - @JuliaRebeca93 on github
-- **Kesse Matias** - Sound - @KetCode on github
-- **Laryssa Maciel** - Programmer - @laryssamaciel on github
-- **Patrícia Milet** - Artist - @triciamilet on instagram 
+## TEAM
+- **Clara Romeiro** - Programmer, Sound - [Github](https://github.com/clararomeiro)
+- **Gabriela Milet** - Programmer - [Contact Links](https://jasbrela.carrd.co)
+- **Julia Rebeca** - Artist, Game Design - [Behance](https://www.behance.net/ShaneStrong93), [Instagram](https://www.instagram.com/ShaneStrong93/)
+- **Kesse Matias** - Sound - [Github](https://github.com/KetCode)
+- **Laryssa Maciel** - Programmer - [Github](https://github.com/LaryssaMaciel)
+- **Patrícia Milet** - Artist - [Contact Links](https://triciamilet.carrd.co)
 
