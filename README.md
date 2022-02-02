@@ -1,6 +1,4 @@
 # MY ROOM, MY RULES!
-
-## HISTORY
 "My Room My Rules!" tells the story of a girl in which her parents show her a career to follow, but the protagonist is still not sure if this is what she want. Over time, our protagonist will identify with what she really likes.
 
 ## GAMEPLAY
