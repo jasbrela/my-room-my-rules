@@ -10,7 +10,7 @@ The player will interact by clicking the objects in the scenario to help our pro
 - **Clara Romeiro** - Programmer, Sound - [Github](https://github.com/clararomeiro)
 - **Gabriela Milet** - Programmer - [Contact Links](https://jasbrela.carrd.co)
 - **Julia Rebeca** - Artist, Game Design - [Behance](https://www.behance.net/ShaneStrong93), [Instagram](https://www.instagram.com/ShaneStrong93/)
-- **Kesse Matias** - Sound - [Github](https://github.com/KetCode)
+- **Kesse Matias** - Sound - [LinkedIn](https://www.linkedin.com/in/kesse-matias-a8647418b/)
 - **Laryssa Maciel** - Programmer - [Github](https://github.com/LaryssaMaciel)
 - **Patrícia Milet** - Artist - [Contact Links](https://triciamilet.carrd.co)
 
